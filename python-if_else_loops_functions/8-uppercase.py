@@ -3,11 +3,8 @@
 def uppercase(str):
     new_str = ""
     for i in str:
-        if i == " ":
-            new_str = new_str + " "
+        if ord(i) >= ord('a') and ord(i) <= ord('z'):
+            new_str = new_str + chr(ord(i)-32)
             continue
-        if ord(i) >= ord('A') and ord(i) <= ord('Z'):
-            new_str = new_str + i
-            continue
-        new_str = new_str + chr(ord(i)-32)
+        new_str = new_str + i
     print("{}".format(new_str))
