@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
 def square_matrix_simple(matrix=[]):
-    if matrix == []:
-        return []
-
-    new_matrix = matrix.copy()
-    m = len(new_matrix)
-    n = len(new_matrix[0])
+    new_matrix = []
+    m = len(matrix)
+    n = len(matrix[0])
 
 
     for i in range(m):
+        row = []
         for j in range(n):
-            new_matrix[i][j] = new_matrix[i][j] ** 2
+            row.append(matrix[i][j] ** 2)
+
+        new_matrix.append(col)
 
     return new_matrix
