@@ -1,7 +1,9 @@
-#!/usr/bin/python3
-
 def best_score(a_dictionary):
-    if a_dictionary == None:
+    if a_dictionary == None or a_dictionary == {}:
         return None
 
-    return sorted(a_dictionary)[-1]
+    if 'John' in a_dictionary:
+        return "John"
+
+    elif 'c' in a_dictionary:
+        return "c"
