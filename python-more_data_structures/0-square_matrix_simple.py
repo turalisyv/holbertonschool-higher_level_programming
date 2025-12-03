@@ -5,7 +5,6 @@ def square_matrix_simple(matrix=[]):
     m = len(matrix)
     n = len(matrix[0])
 
-
     for i in range(m):
         row = []
         for j in range(n):
