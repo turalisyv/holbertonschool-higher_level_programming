@@ -11,6 +11,6 @@ def square_matrix_simple(matrix=[]):
         for j in range(n):
             row.append(matrix[i][j] ** 2)
 
-        new_matrix.append(col)
+        new_matrix.append(row)
 
     return new_matrix
