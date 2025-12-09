@@ -33,6 +33,15 @@ class Rectangle():
 
         return res
 
+    def __repr__(self):
+        res = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                res = res + "#"
+            res = res + "\n"
+
+        return res
+
     @property
     def width(self):
         return self.__width
