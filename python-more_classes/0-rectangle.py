@@ -3,6 +3,7 @@
 My module document
 '''
 
+
 class Rectangle():
     '''
     My class document
