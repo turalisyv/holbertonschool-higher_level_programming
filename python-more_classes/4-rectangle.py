@@ -37,7 +37,7 @@ class Rectangle():
                 res = res + "\n"
 
         return res
-    
+
     def __repr__(self):
         return str("Rectangle({}, {})".format(self.__width, self.__height))
 
