@@ -1,1 +1,3 @@
-
+>>> from script import MyList
+>>> my_list = MyList()
+>>> my_list.append(1)
