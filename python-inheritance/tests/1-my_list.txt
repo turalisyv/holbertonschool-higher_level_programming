@@ -21,5 +21,6 @@
 >>> my_list_empty.print_sorted()
 []
 
->>> assert id(my_list) != id(my_list.print_sorted()), "ok"
+>>> my_list.print_sorted() == my_list
 [1, 2, 3]
+False
