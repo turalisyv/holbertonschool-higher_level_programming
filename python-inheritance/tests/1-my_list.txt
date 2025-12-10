@@ -20,3 +20,6 @@
 >>> my_list_empty = MyList()
 >>> my_list_empty.print_sorted()
 []
+
+>>> assert my_list.print_sorted() !=  my_list, "ok"
+[1, 2, 3]
