@@ -3,6 +3,7 @@
 My module document
 '''
 
+
 def is_kind_of_class(obj, a_class):
     '''
     My method document
