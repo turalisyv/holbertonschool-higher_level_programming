@@ -4,7 +4,7 @@ My module document
 '''
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     '''
     My document
     '''
