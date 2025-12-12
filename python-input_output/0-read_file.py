@@ -8,5 +8,6 @@ def read_file(filename=""):
     '''
     My function document
     '''
-    with open(file=filename, encoding="utf-8") as f:
-        print(f.read().strip())
+    with open(file=filename, mode="r", encoding="utf-8") as f:
+        text = str(f.read())
+        print(text.strip(" ").strip())
