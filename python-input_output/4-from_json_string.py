@@ -3,6 +3,7 @@
 My module document
 '''
 
+
 def from_json_string(my_str):
     '''
     My function document
