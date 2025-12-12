@@ -2,6 +2,8 @@
 
 >>> bg = BaseGeometry()
 
+>>> bg.integer_validator("age", 12)
+
 >>> try:
 ...    bg.area()
 ... except Exception as e: 
