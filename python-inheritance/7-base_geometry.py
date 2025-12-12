@@ -9,7 +9,7 @@ class BaseGeometry():
     My class document
     '''
     def integer_validator(self, name, value):
-        if not type(value) == int:
+        if not type(value) is int:
             raise TypeError("{} must be an integer".format(name))
 
         if value <= 0:
