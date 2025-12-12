@@ -4,7 +4,7 @@ My module document
 '''
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     '''
     My function document
     '''
