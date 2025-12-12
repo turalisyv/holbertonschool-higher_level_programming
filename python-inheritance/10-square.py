@@ -11,13 +11,13 @@ class Square(Rectangle):
     '''
     My class document
     '''
-    def __init__(self, width, ):
-        Rectangle.integer_validator(self, "width", width)
-        self.__width = width
+    def __init__(self, size):
+        Rectangle.integer_validator(self, "size", size)
+        self.__width = size
 
 
     def __str__(self):
-        return "[Rectangle] {}/{}".format(self.__width, self.__width)
+        return "[Rectangle] {}/{}".format(self.__size, self.__size)
 
     def area(self):
-        return self.__width * self.__width
+        return self.__size * self.__size
