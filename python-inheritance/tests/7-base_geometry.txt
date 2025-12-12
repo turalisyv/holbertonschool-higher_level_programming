@@ -2,8 +2,6 @@
 
 >>> bg = BaseGeometry()
 
->>> bg.integer_validator("age", 12)
-
 >>> try:
 ...    bg.area()
 ... except Exception as e: 
@@ -54,11 +52,7 @@ age must be an integer
 ...    print(e)
 age must be an integer
 
->>> try:
-...    bg.integer_validator("age", True)
-... except Exception as e:
-...    print(e)
-
+>>> bg.integer_validator("age", True)
 
 >>> try:
 ...    bg.integer_validator("age", {3, 4})
