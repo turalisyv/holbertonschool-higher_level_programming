@@ -12,7 +12,7 @@ class Square(Rectangle):
     My class document
     '''
     def __init__(self, size):
-        Rectangle.integer_validator(self, "width", size)
+        Rectangle.integer_validator(self, "size", size)
         self.__size = size
 
     def __str__(self):
