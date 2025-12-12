@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''
+And God said "let there run code!"
+'''
+
 
 if __name__=="__main__":
     '''
