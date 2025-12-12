@@ -4,7 +4,7 @@ My module document
 '''
 
 
-Rectangle = __import__('script').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
