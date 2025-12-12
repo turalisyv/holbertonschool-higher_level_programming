@@ -9,5 +9,8 @@ def read_file(filename=""):
     My function document
     '''
     with open(file=filename, mode="r", encoding="utf-8") as f:
-        text = str(f.read())
-        print(text.strip(" ").strip())
+        txt = f.read()
+        if f.read() == txt:
+            f.close()
+            return
+        print(txt.strip())
