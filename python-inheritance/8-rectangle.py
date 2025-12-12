@@ -8,8 +8,6 @@ class BaseGeometry():
     '''
     My class document
     '''
-
-
     def integer_validator(self, name, value):
         if not type(value) is int:
             raise TypeError("{} must be an integer".format(name))
@@ -22,6 +20,9 @@ class BaseGeometry():
 
 
 class Rectangle(BaseGeometry):
+    '''
+    My class document
+    '''
     def __init__(self, width, height):
         BaseGeometry.integer_validator(self, "width", width)
         BaseGeometry.integer_validator(self, "height", height)
