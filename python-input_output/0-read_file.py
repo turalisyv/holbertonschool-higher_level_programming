@@ -5,5 +5,8 @@ My module document
 
 
 def read_file(filename=""):
+    '''
+    My function document
+    '''
     with open(file=filename, mode="r") as f:
         print(f.read())
