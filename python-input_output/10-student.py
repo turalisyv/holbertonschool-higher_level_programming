@@ -3,6 +3,7 @@
 My module document
 """
 
+
 class Student:
     """
     My class document
@@ -13,7 +14,7 @@ class Student:
         self.age = age
 
     def to_json(self, attr=None):
-        if attr == None:
+        if attr is None:
             return self.__dict__
 
         dict = {}
