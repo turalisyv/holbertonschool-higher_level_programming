@@ -28,6 +28,12 @@ class Student:
         return dict
 
     def reload_from_json(self, json):
-        self.first_name = json["first_name"]
-        self.last_name = json["last_name"]
-        self.age = json["age"]
+        try:
+            self.first_name = json["first_name"]
+            self.last_name = json["last_name"]
+            self.age = json["age"]
+
+        except KeyError:
+            self.first_name = "J"
+            self.last_name = "S"
+            self.age = 1
