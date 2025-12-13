@@ -8,7 +8,4 @@ def class_to_json(obj):
     '''
     My function document
     '''
-    return {
-        "name": obj.name,
-        "number": obj.number
-    }
+    return obj.__dict__
