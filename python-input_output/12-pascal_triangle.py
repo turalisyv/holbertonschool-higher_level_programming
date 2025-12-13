@@ -8,20 +8,19 @@ def pascal_triangle(n):
     '''
     My function document
     '''
-    def fact(a):
-        res = 1
-        for i in range(1, a + 1):
-            res = res * i
-        return res
+    if n <= 0:
+        return []
 
-    def C(n, r):
-        return int(fact(n) / (fact(r) * fact(n - r)))
+    res = [[1]]
 
-    res = []
-    for i in range(n):
-        temp = []
-        for j in range(i+1):
-            temp.append(C(i, j))
-        res.append(temp)
+    for i in range(1, n):
+        a = res[-1]
+        b = [1]
+
+        for j in range(1, len(a)):
+            b.append(a[j - 1] + a[j])
+
+        b.append(1)
+        res.append(b)
 
     return res
