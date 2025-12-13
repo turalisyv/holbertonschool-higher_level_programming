@@ -21,7 +21,7 @@ class Student:
             try:
                 dict.update({i: self.__dict__[i]})
 
-            except:
+            except KeyError:
                 continue
 
         return dict
