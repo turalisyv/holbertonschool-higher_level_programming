@@ -9,20 +9,11 @@ def convert_csv_to_json(data):
     My function document
     '''
 
-    import json
     import csv
+    import json
 
-    json_data = []
+    with open(data, mode='r', newline='', encoding='utf-8') as csvfile:
+        data = list(csv.DictReader(csvfile))
 
-    try:
-        with open(data, mode='r', newline='') as file:
-            csv = csv.reader(file)
-            csv = list(csv)
-            for i in csv[1:]:
-                json_data.append(dict(zip(csv[0], i)))
-
-        with open("data.json", mode="w") as f:
-            json.dump(json_data, f, indent=4)
-
-    except Exception:
-        return False
+    with open('data.json', mode='w', encoding='utf-8') as jsonfile:
+        json.dump(data, jsonfile, indent=4)
