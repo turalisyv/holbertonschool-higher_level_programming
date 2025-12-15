@@ -1,5 +1,7 @@
 -- First table --
 
+CREATE DATABASE hbtn_test_db_4;
+
 USE hbtn_test_db_4;
 
 CREATE OR REPLACE TABLE first_table (
