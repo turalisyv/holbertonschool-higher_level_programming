@@ -1,5 +1,3 @@
 -- Document
 
-CREATE TABLE hbtn_0c_0 (
-	exampe	INT
-);
+CREATE DATABASE hbtn_0c_0;
