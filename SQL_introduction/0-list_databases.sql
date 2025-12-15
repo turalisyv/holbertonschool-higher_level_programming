@@ -1,1 +1,3 @@
-SHOW DATABASES ^-- hmm
+-- Hmm --
+
+SHOW DATABASES;
