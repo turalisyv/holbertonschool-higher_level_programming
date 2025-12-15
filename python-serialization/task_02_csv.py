@@ -1,28 +1,30 @@
+#!/usr/bin/python3
+'''
+My module document
+'''
+
+
 def convert_csv_to_json(csv_file_path):
     '''
     My function document
     '''
 
-    import csv
     import json
-    import os
+    import csv
 
-    data = []
-    try:
-        with open(csv_file_path, mode='r', encoding='utf-8') as csv_file:
-            csv_reader = csv.DictReader(csv_file)
-            for row in csv_reader:
-                data.append(row)
-
-    except FileNotFoundError:
-        return False
-
-    except Exception:
-        return False
+    json_data = []
 
     try:
-        with open(json_file_path, mode='w', encoding='utf-8') as json_file:
-            json.dump(data, json_file, indent=4)
+        with open(data, mode='r', newline='') as file:
+            csv = csv.reader(file)
+            csv = list(csv)
+            for i in csv[1:]:
+                json_data.append(dict(zip(csv[0], i)))
+
+        with open("data.json", mode="w") as f:
+            json.dump(json_data, f, indent=4)
+        
+        return True
 
     except Exception:
         return False
