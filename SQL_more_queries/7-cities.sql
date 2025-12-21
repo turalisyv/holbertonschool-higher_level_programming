@@ -1,0 +1,9 @@
+-- Cities table --
+
+USE hbtn_0d_usa;
+
+CREATE TABLE IF NOt EXISTS cities(
+	id		INT UNIQUE AUTO_INCREMENT PRIMARY KEY,
+	state_id	INT NOT NULL FOREIGN KEY,
+	name		VARCHAR(256)
+)
