@@ -1,3 +1,4 @@
 -- Cities of California --
 
-SELECT * FROM cities WHERE state.state_id = cities.id ORDER BY cities.id;
+SELECT * FROM cities WHERE cities.state_id = states.id
+ORDER BY cities.id;
